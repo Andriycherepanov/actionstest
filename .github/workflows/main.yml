@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - run: docker build . -t app
+      - run: docker build ./docker/Dockerfile -t app
       - run: docker run --rm app
